@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "pedidoStorage"
+    }
+  },
+  "defaultProject": "pedidoStorage",
+  "cli": {
+    "analytics": "561a21c8-26e6-47db-905c-da205aafa3d2"
+  }
 }

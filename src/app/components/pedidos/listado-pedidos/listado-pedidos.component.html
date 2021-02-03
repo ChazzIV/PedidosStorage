@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row mt-3">
+        <div class="col-sm-3" *ngFor="let pedido of listadoPedidos">
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">{{pedido.nombreCliente}}</h5>
+                  <h6 class="card-subtitle">{{pedido.total | currency: 'mxn '}}</h6>
+                  <p class="card-text">Productos {{pedido.pedidoDetalle.length}}</p>
+                  <a (click)="eliminar(pedido)" class="btn btn-danger">Eliminar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
